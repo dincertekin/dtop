@@ -4,8 +4,6 @@ Modern TUI process manager built with Python and Textual.
 ## Description
 dtop is a terminal-based process manager built with Python, [Textual](https://github.com/Textualize/textual), and psutil. It lets you view and manage system processes directly from your terminal with a clean, dynamic interface. You can search for processes by name, kill them with a keystroke, and toggle between light and dark mode.
 
-## Screenshots
-
 ## Getting Started
 
 ### Dependencies
