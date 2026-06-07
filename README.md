@@ -1,4 +1,4 @@
-# dtop
+# DTop
 
 ![Platform](https://img.shields.io/badge/platform-Linux-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
