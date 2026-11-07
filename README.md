@@ -1,65 +1,51 @@
-# DTop
+# dtop
 
-![Platform](https://img.shields.io/badge/platform-Linux-blue)
-![License](https://img.shields.io/badge/license-MIT-green)
+[![license: MIT](https://img.shields.io/badge/license-MIT-111827)](LICENSE)
+![Python 3](https://img.shields.io/badge/python-3-111827?logo=python)
+![Built with Textual](https://img.shields.io/badge/built%20with-Textual-111827)
 
-dtop is a terminal-based process manager built with Python, [Textual](https://github.com/Textualize/textual), and psutil. Search processes by name, kill them with a keystroke, and toggle between light and dark mode. All from your terminal. Inspired by [htop](https://github.com/htop-dev/htop).
+**A friendlier `htop`.** See what's running, sort by CPU or memory, search by
+name and kill a process with one key, in a modern terminal UI that also works
+with your mouse.
 
-## Tech Stack
+- **Live:** refreshes every 2 seconds, with heavy processes colored so they stand out.
+- **Search:** filter the list by process name as you type.
+- **Safe kills:** `k` asks for confirmation before ending anything.
+- **Light or dark:** switch with `d`.
 
-| Layer | Tool |
-|---|---|
-| Language | Python 3 |
-| TUI Framework | Textual |
-| System Info | psutil |
-| Platform | Linux |
-
-## Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/dincertekin/dtop.git
-   cd dtop/
-   ```
-
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-## Usage
+## Install
 
 ```bash
-python dtop.py
+git clone https://github.com/dincertekin/dtop.git
+cd dtop
+pip install -r requirements.txt
+python main.py
 ```
 
-If you run into dependency issues, make sure pip is up to date:
-```bash
-pip install --upgrade pip
-```
+Developed on Linux. It's built on [psutil](https://github.com/giampaolo/psutil)
+and [Textual](https://github.com/Textualize/textual), which also run on macOS
+and Windows.
 
-## Controls
+## Keys
 
 | Key | Action |
 |---|---|
-| `Ctrl+Q` | Quit the application |
-| `D` | Toggle dark mode |
-| `Ctrl+S` | Search processes by name |
-| `K` | Kill selected process |
-| Arrow keys | Navigate process list |
+| `↑` `↓` | Move through the list |
+| `Ctrl+S` | Search by name |
+| `Esc` | Clear the search |
+| `c` / `m` | Sort by CPU / memory |
+| `k` | Kill the selected process (asks first) |
+| `d` | Toggle dark mode |
+| `Ctrl+Q` | Quit |
+
+Killing processes you don't own needs `sudo python main.py`.
 
 ## Contributing
 
-Contributions are welcome! To get started:
+Issues and pull requests are welcome.
 
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/your-feature`).
-3. Commit your changes (`git commit -m 'Add your feature'`).
-4. Push to the branch (`git push origin feature/your-feature`).
-5. Open a Pull Request.
-
-For major changes, please open an issue first to discuss what you'd like to change.
+Inspired by [htop](https://github.com/htop-dev/htop).
 
 ## License
 
-[MIT License](./LICENSE)
+[MIT](LICENSE)
