@@ -1,8 +1,10 @@
 # dtop
 
-[![license: MIT](https://img.shields.io/badge/license-MIT-111827)](LICENSE)
-![Python 3](https://img.shields.io/badge/python-3-111827?logo=python)
-![Built with Textual](https://img.shields.io/badge/built%20with-Textual-111827)
+<p>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dincertekin/dincertekin/main/assets/badges/python-dark.svg"><img src="https://raw.githubusercontent.com/dincertekin/dincertekin/main/assets/badges/python-light.svg" alt="Python 3" height="28"></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dincertekin/dincertekin/main/assets/badges/textual-dark.svg"><img src="https://raw.githubusercontent.com/dincertekin/dincertekin/main/assets/badges/textual-light.svg" alt="Textual" height="28"></picture>
+  <a href="LICENSE"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dincertekin/dincertekin/main/assets/badges/mit-dark.svg"><img src="https://raw.githubusercontent.com/dincertekin/dincertekin/main/assets/badges/mit-light.svg" alt="MIT license" height="28"></picture></a>
+</p>
 
 **A friendlier `htop`.** See what's running, sort by CPU or memory, search by
 name and kill a process with one key, in a modern terminal UI that also works
